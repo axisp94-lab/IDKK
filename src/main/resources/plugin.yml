@@ -1,0 +1,14 @@
+name: AnpcTest
+version: 0.1.0
+main: net.amethystesmp.anpc.test.AnpcTestPlugin
+api-version: '1.21'
+depend: [BetterModel]
+description: Prototype de test - NPC BetterModel qui glisse sur N blocs avec animation de marche
+commands:
+  anpctest:
+    description: Lance le test de deplacement fluide
+    usage: /anpctest [modele] [blocs] [vitesse_blocs_par_s] [pas_ticks] [animation]
+    permission: anpc.test
+permissions:
+  anpc.test:
+    default: op
